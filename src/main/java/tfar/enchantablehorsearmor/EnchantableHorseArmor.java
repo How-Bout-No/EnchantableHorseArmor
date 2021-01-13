@@ -28,7 +28,7 @@ public class EnchantableHorseArmor {
 		HorseArmorItem horseArmorItem = (HorseArmorItem) stack.getItem();
 		boolean glint = stack.hasEffect();
 		if (glint) {
-			ResourceLocation texture = horseArmorItem.func_219976_d();
+			ResourceLocation texture = horseArmorItem.getArmorTexture();
 			return VertexBuilderUtils.newDelegate(
 							bufferIn.getBuffer(RenderType.getEntityGlint()),
 							bufferIn.getBuffer(RenderType.getEntityCutoutNoCull(texture))
